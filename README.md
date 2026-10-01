@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Defense-Asset-Management"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Defense-Asset-Management?style=flat-square" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Defense-Asset-Management"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Defense-Asset-Management?style=flat-square" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Defense-Asset-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Defense-Asset-Management?style=flat-square" alt="GitHub forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Defense-Asset-Management/stargazers"><img src="https://img.shields.io/github/last-commit/ishandutta2007/Awesome-Defense-Asset-Management?style=flat-square" alt="Last Commit"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -47,9 +47,9 @@ Below is a structured overview of top enterprise SaaS platforms serving military
 
 ## 🔓 Open-Source GitHub Projects
 
-Below is a curated list of open-source projects, public sector ERPs, and asset management systems adaptable for defense tracking, sorted by GitHub star count in descending order.
+Below is a curated list of open-source projects, public sector ERPs, and asset management systems adaptable for defense tracking, sorted by GitHub Stars_Count in descending order.
 
-| Project Name | Stars | Description & Defense Use Case | License |
+| Project Name | GitHub_Stars | Description & Defense Use Case | License |
 | :--- | :---: | :--- | :--- |
 | **[NetBox](https://github.com/netbox-community/netbox)** 🌐 | [<img src="https://img.shields.io/github/stars/netbox-community/netbox?style=social&color=white" alt="NetBox Stars"/>](https://github.com/netbox-community/netbox/stargazers) | Premier infrastructure source-of-truth and physical/logical asset tracking system favored for air-gapped environments. | Apache-2.0 |
 | **[Snipe-IT](https://github.com/snipe/snipe-it)** 💻 | [<img src="https://img.shields.io/github/stars/snipe/snipe-it?style=social&color=white" alt="Snipe-IT Stars"/>](https://github.com/snipe/snipe-it/stargazers) | Powerful open-source IT asset management system for tracking hardware, consumables, and licenses. | AGPL-3.0 |
