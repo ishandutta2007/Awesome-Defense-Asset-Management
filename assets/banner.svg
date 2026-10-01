@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1118"/>
+      <stop offset="50%" stop-color="#121e2b"/>
+      <stop offset="100%" stop-color="#1b2a3a"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffb703"/>
+      <stop offset="100%" stop-color="#fb8500"/>
+    </linearGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.07"/>
+    </pattern>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGrad)"/>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+
+  <!-- Dynamic Animated Background Radar & Radar Pulse -->
+  <g transform="translate(1000, 150)">
+    <!-- Concentric Circles -->
+    <circle r="120" fill="none" stroke="#00f2fe" stroke-width="1" stroke-opacity="0.15"/>
+    <circle r="90" fill="none" stroke="#00f2fe" stroke-width="1" stroke-opacity="0.25"/>
+    <circle r="60" fill="none" stroke="#00f2fe" stroke-width="1" stroke-opacity="0.35"/>
+    <circle r="30" fill="none" stroke="#00f2fe" stroke-width="1" stroke-opacity="0.45"/>
+    
+    <!-- Radar Sweep Line -->
+    <line x1="0" y1="0" x2="120" y2="0" stroke="url(#accentGrad)" stroke-width="2" opacity="0.8">
+      <animateTransform 
+        attributeName="transform" 
+        type="rotate" 
+        from="0" 
+        to="360" 
+        dur="6s" 
+        repeatCount="indefinite"/>
+    </line>
+
+    <!-- Radar Sweep Gradient Cone -->
+    <path d="M 0 0 L 120 0 A 120 120 0 0 1 85 85 Z" fill="url(#accentGrad)" opacity="0.15">
+      <animateTransform 
+        attributeName="transform" 
+        type="rotate" 
+        from="0" 
+        to="360" 
+        dur="6s" 
+        repeatCount="indefinite"/>
+    </path>
+
+    <!-- Asset Blips -->
+    <circle cx="45" cy="-30" r="3" fill="#ffb703" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-60" cy="40" r="4" fill="#00f2fe" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="20" cy="70" r="3.5" fill="#00f2fe" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Left Dynamic Pulse Node -->
+  <g transform="translate(100, 150)">
+    <circle r="80" fill="none" stroke="#4facfe" stroke-width="1" stroke-opacity="0.15"/>
+    <circle r="40" fill="none" stroke="#4facfe" stroke-width="1" stroke-dasharray="4,4" stroke-opacity="0.3">
+      <animateTransform 
+        attributeName="transform" 
+        type="rotate" 
+        from="360" 
+        to="0" 
+        dur="12s" 
+        repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Foreground Title and Subtitle -->
+  <g transform="translate(120, 115)">
+    <!-- Badge Pill Top -->
+    <g transform="translate(0, -50)">
+      <rect width="260" height="28" rx="14" fill="#00f2fe" fill-opacity="0.1" stroke="#00f2fe" stroke-width="1"/>
+      <circle cx="15" cy="14" r="5" fill="#00f2fe">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="30" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#00f2fe" letter-spacing="1">DEFENSE ASSET MANAGEMENT</text>
+    </g>
+
+    <!-- Main Title -->
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-0.5">
+      Awesome Defense Asset Management 🛡️
+    </text>
+
+    <!-- Subtitle -->
+    <text y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="400" fill="#94a3b8" letter-spacing="0.2">
+      Curated Ecosystem of Defense SaaS Platforms, Military ERPs &amp; Open-Source Solutions
+    </text>
+
+    <!-- Feature Tags -->
+    <g transform="translate(0, 75)">
+      <!-- Tag 1 -->
+      <rect width="150" height="24" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1">⚡ SaaS Platforms</text>
+
+      <!-- Tag 2 -->
+      <rect x="160" width="160" height="24" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="172" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1">🔓 Open-Source Repos</text>
+
+      <!-- Tag 3 -->
+      <rect x="330" width="170" height="24" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="342" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1">🎯 Property Accountability</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Line -->
+  <rect y="296" width="1200" height="4" fill="url(#accentGrad)"/>
+</svg>
